@@ -138,7 +138,9 @@ Esto te muestra todas las capas que forman la imagen, incluyendo los comandos us
 
 
 
-
+<br>
+<br>
+---
 
 # tarea 2. Limpiando imágenes (opcional)
 ## Crea un Dockerfile basado en:
