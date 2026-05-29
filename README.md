@@ -135,12 +135,11 @@ Esto te muestra todas las capas que forman la imagen, incluyendo los comandos us
 ![Comando History de docker](./capturas/tarea-2-4.png)
 
 
-
-
-
 <br>
 <br>
+
 ---
+
 
 # tarea 2. Limpiando imágenes (opcional)
 ## Crea un Dockerfile basado en:
