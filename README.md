@@ -10,7 +10,8 @@ docker run ubuntu
 ```
 
  
- ![Image](./capturas/Tarea-1-1.png)
+
+![Image](./capturas/tarea-1-1.png)
 
 El clásico error de Docker. Lo que está pasando aquí es muy sencillo: la terminal (el cliente de Docker) está intentando hablar con el "motor" de Docker (el daemon), pero este está completamente apagado. Es como intentar arrancar el coche sin haberle puesto la batería.
 Para solucionarlo, solo debes seguir estos pasos:
@@ -18,6 +19,8 @@ Para solucionarlo, solo debes seguir estos pasos:
 Busca Docker Desktop en tu menú de inicio de Windows y ejecútalo.
  ![Image](./capturas/Tarea-1-2.png)
  ![Image](./capturas/Tarea-1-3.png)
+
+ 
 ###2. Vuelve a probar en tu CMD
 Una vez que Docker Desktop esté listo, regresa a tu consola (donde tienes la carpeta 02-docker) y vuelve a ejecutar tu comando:
  ![Image](./capturas/Tarea1-4.png)
