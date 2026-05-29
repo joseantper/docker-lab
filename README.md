@@ -487,8 +487,7 @@ ping 172.18.0.3
 
 
 # tarea 7. Red none
-![Image](./capturas/tarea-7-1.png)
-
+<br>
  Investiga: ¿Para qué serviría ejecutar un contenedor con red: none
 
 docker run -it --network none ubuntu
