@@ -134,7 +134,7 @@ docker history mi-ubuntu-curl
 Esto te muestra todas las capas que forman la imagen, incluyendo los comandos usados para crearlas.
 ![Comando History de docker](./capturas/tarea-2-4.png)
 
-
+<br>
 <br>
 <br>
 
@@ -208,8 +208,11 @@ Cuando modifiqué el archivo para crear mi-ubuntu-wget, el motor usó el mecanis
 
 ***En resumen:*** Aunque ambas imágenes tengan un Content Size de unos 77 MB, el impacto real en tu disco duro al crear la última imagen fue de solo 0.3 MB, porque todo lo demás ya estaba almacenado y se reutilizó.
 
+<br>
+<br>
+<br>
 
-
+---
 
 # tarea 3 Volúmenes persistentes
 
@@ -321,6 +324,12 @@ SELECT * FROM items;
 
 ![vuelve a conectar con los datos ](./capturas/tarea-4-2.png)
 
+<br>
+<br>
+<br>
+
+---
+
 
 # tarea 4 Volúmenes persistentes Bind mounts 
 
@@ -369,6 +378,11 @@ Que si cambio index.html, lo guardo, y actualizo la pagina o la vuelvo a cargar,
 
 ![nueva configuracion](./capturas/tarea-4-8.png)
 
+<br>
+<br>
+<br>
+
+---
 
 
 
@@ -404,6 +418,11 @@ Si alguna vez necesitas acceder a esos archivos desde Windows de manera obligato
 
 ![Image](./capturas/tarea-5-1.png)
 
+<br>
+<br>
+<br>
+
+---
 
 
 
@@ -461,6 +480,11 @@ ping 172.18.0.3
 
 ![Ping por IP](./capturas/tarea-6-4.png)
 
+<br>
+<br>
+<br>
+
+---
 
 
 
@@ -487,6 +511,11 @@ Si estás construyendo una plataforma donde los usuarios suben su propio código
 3. tareas pesadas de cálculo puro (Batch Processing)
 Para contenedores que solo necesitan potencia de cómputo (por ejemplo, renderizar un video 3D con Blender, procesar un archivo de texto gigantesco que ya está guardado en un volumen, o ejecutar simulaciones matemáticas). Al quitarle la red, el contenedor no gasta memoria ni recursos del sistema gestionando conexiones.
 
+<br>
+<br>
+<br>
+
+---
 
 
 # tarea 8. Multi-network
@@ -528,6 +557,11 @@ inspeccionar configuracion de red del contenedor
 
 
 ![inspeccionar configuracion de red del contenedor](./capturas/tarea-8-4.png)
+<br>
+<br>
+<br>
+
+---
 
 
 # tarea 9. Docker Compose --- Compartiendo volúmenes 
@@ -596,6 +630,11 @@ docker compose up
 
 ![ejecutar docker compose](./capturas/tarea-9-2.png)
 
+<br>
+<br>
+<br>
+
+---
 
 
 # tarea 10. Docker Compose Profiles 
