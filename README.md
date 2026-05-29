@@ -285,8 +285,6 @@ INSERT INTO items(name) VALUES ('item1');
 ```
 
 
-![Image](./capturas/tarea-03-3-exec.png)
-
 
 Comprobación con un select 
 ```
@@ -305,7 +303,7 @@ docker stop postgres
 docker rm postgres
 ```
 
-![parar y borrar contenedor](./capturas/tarea-03-5-stop-y-rm.png)
+![parar y borrar contenedor](./capturas/tarea-4-1.png)
 
 
 ###  nuevo contenedor
@@ -489,7 +487,7 @@ ping 172.18.0.3
 
 
 # tarea 7. Red none
-![Image](./capturas/tarea-07-1-red-none.png)
+![Image](./capturas/tarea-7-1.png)
 
  Investiga: ¿Para qué serviría ejecutar un contenedor con red: none
 
@@ -619,7 +617,7 @@ Permisos: Lo monta en modo ro (Read-Only / Solo Lectura). Protege el archivo par
 
 En resumen: Es el clásico patrón Productor-Consumidor. Un contenedor genera datos constantemente en un archivo y el otro los lee en tiempo real de forma segura.
 
-![Image](./capturas/tarea-09-1-dokercomposer.png)
+![Image](./capturas/tarea-9-1.png)
 
 
 
@@ -720,7 +718,7 @@ Entrar a pgAdmin
 Abre:
 
 http://localhost:8008
-![Image](./capturas/tarea-10-3png)
+![Image](./capturas/tarea-10-3.png)
 
 Login:
 Email: admin@admin.com
