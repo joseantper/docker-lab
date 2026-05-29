@@ -76,7 +76,7 @@ NOTA: al  guardar el contenedor mientras está encendido, Docker pausará el con
 ## Paso 2 --- Dockerfile
 Crea un Dockerfile que haga lo mismo automáticamente.
 
-****Crea el archivo: **** Dentro de tu carpeta, crea un archivo de texto nuevo, pégale el código de siguiente y guárdalo eliminando la extensión .txt. Debe llamarse Dockerfile (así, a secas, con la D mayúscula y sin extensiones).
+****Crea el archivo:**** Dentro de tu carpeta, crea un archivo de texto nuevo, pégale el código de siguiente y guárdalo eliminando la extensión .txt. Debe llamarse Dockerfile (así, a secas, con la D mayúscula y sin extensiones).
 
 ```
 # 1. Usar la imagen oficial de Ubuntu como base
@@ -92,7 +92,7 @@ CMD ["/bin/bash"]
 
 
 
-***Construye la imagen (Build): *** Abre tu CMD de Windows ejecuta el comando :
+***Construye la imagen (Build):*** Abre tu CMD de Windows ejecuta el comando :
 ```
 docker build -t mi-ubuntu-curl .
 ```
@@ -108,7 +108,7 @@ docker run -it mi-ubuntu-curl
 ````
 
 
-*** Verificación final:*** Una vez dentro del contenedor (root@...:/#), escribe curl --version 
+***Verificación final:*** Una vez dentro del contenedor (root@...:/#), escribe curl --version 
 ```
  curl --version 
 ````
@@ -194,12 +194,14 @@ En Docker, una imagen es una pila de capas de solo lectura. Cada línea de Docke
 
 Cuando modifiqué el archivo para crear mi-ubuntu-wget, el motor usó el mecanismo de Layer Caching (Caché de Capas): detectó que las capas de Ubuntu y curl ya existían, no las volvió a descargar, y solo calculó el delta (la diferencia) añadiendo los binarios de wget en una capa superior. Las imágenes anteriores no se borran; comparten la misma base.
 
-*** 2. Diferencia: Content Size vs. Disk Usage ***
 
-**** CONTENT SIZE (Tamaño Virtual): **** Es el peso lógico total de la imagen si estuviera completamente sola. Suma el peso de todas sus capas desde la base hasta la punta ($\text{Ubuntu} + \text{curl} + \text{wget}$). Te dice cuánto pesará si la subes a internet o la llevas a otra máquina.
-***DISK USAGE (Espacio Físico Real): **** Es el espacio que la imagen ocupa físicamente en tu disco duro. Gracias a la estrategia Copy-on-Write (Copia en Escritura), Docker no duplica los archivos comunes en tu disco.
+***2. Diferencia: Content Size vs. Disk Usage***
 
-*** En resumen: *** Aunque ambas imágenes tengan un Content Size de unos 77 MB, el impacto real en tu disco duro al crear la última imagen fue de solo 0.3 MB, porque todo lo demás ya estaba almacenado y se reutilizó.
+****CONTENT SIZE (Tamaño Virtual):**** Es el peso lógico total de la imagen si estuviera completamente sola. Suma el peso de todas sus capas desde la base hasta la punta ($\text{Ubuntu} + \text{curl} + \text{wget}$). Te dice cuánto pesará si la subes a internet o la llevas a otra máquina.
+
+***DISK USAGE (Espacio Físico Real):**** Es el espacio que la imagen ocupa físicamente en tu disco duro. Gracias a la estrategia Copy-on-Write (Copia en Escritura), Docker no duplica los archivos comunes en tu disco.
+
+***En resumen:*** Aunque ambas imágenes tengan un Content Size de unos 77 MB, el impacto real en tu disco duro al crear la última imagen fue de solo 0.3 MB, porque todo lo demás ya estaba almacenado y se reutilizó.
 
 
 
@@ -213,7 +215,7 @@ Usa un volumen Docker montado en:  /var/lib/postgresql/data
 
 Creo el contenedor con la imagen postgres
 
-*** ATENCION *** 
+***ATENCION*** 
 
 Aunque a partir de PostgreSQL 18 la estructura interna del motor cambie, la imagen oficial de Docker de Postgres sigue necesitando obligatoriamente que el volumen apunte a la carpeta exacta donde se inicializa la base de datos (/var/lib/postgresql/data).
 Si apuntas el volumen a la raíz /var/lib/postgresql, el script de inicio de la imagen de Docker fallará porque intentará crear archivos de configuración en una ruta donde el volumen bloquea los permisos, o bien no encontrará la subcarpeta data preconfigurada en las variables de entorno de la imagen.
